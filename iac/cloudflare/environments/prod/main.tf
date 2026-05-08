@@ -2,8 +2,8 @@
 # or via wrangler if the script uses an R2 binding (e.g. env.STREAK_SITES).
 
 locals {
-  # path.root is this prod module directory (~.../environments/prod).
-  worker_script_abs = "${var.worker_script_path}"
+  # path.root is .../iac/cloudflare/environments/prod; repo root is four levels up.
+  worker_script_abs = "${path.root}/../../../../${var.worker_script_path}"
 }
 
 module "r2" {
