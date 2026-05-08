@@ -3,7 +3,7 @@
 
 locals {
   # path.root is this prod module directory (~.../environments/prod).
-  worker_script_abs = "${path.root}/../../../../../../${var.worker_script_path}"
+  worker_script_abs = "${var.worker_script_path}"
 }
 
 module "r2" {
