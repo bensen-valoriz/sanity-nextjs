@@ -1,6 +1,6 @@
 environment               = "dev"
-worker_name               = "web-streakjs-dev"
-r2_bucket_name            = "web"
+worker_name               = "web-streakjs-dev-test"
+r2_bucket_name            = "web-dev-test"
 worker_compatibility_date = "2025-01-01"
 
 # Provide sensitive values via environment variables in CI/CD or locally:
